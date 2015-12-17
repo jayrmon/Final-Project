@@ -1,0 +1,212 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Your styles here */
+
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	border-color: #787878;
+	border-style: solid;
+	border-width: 1px;
+	border-bottom: none;
+	border-top: none;
+
+}
+
+.wrapper {
+	-moz-box-shadow: 0 0 8px #8888BA;
+	-webkit-box-shadow: 0 0 8px #8888BA;
+	box-shadow: 0 0 8px #8888BA;
+}
+
+h1 {
+	font-family: Trebuchet MS;
+	text-transform: uppercase;
+	font-size: 3em;
+	border-bottom: solid #787878;
+	border-width: 1px;
+	padding-bottom: 20px;
+
+}
+
+h1 a {
+	text-decoration: none;
+	color: #000080;
+	letter-spacing: 2px;
+}
+
+.title {
+	display: block;
+	text-align: center;
+	margin: auto;
+	padding-top: 15px;
+}
+
+.sitelinks {
+	font-style: italic;
+	display: block;
+	text-align: right;
+}
+
+.sitelinks a {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: .9em;
+}
+
+.sitelinks a:visited {
+	color: black;
+}
+
+.sitelinks a:hover {
+	text-decoration: underline;
+	color: #000080;
+}
+
+
+
+.projects {
+	line-height: 95%;
+}
+
+
+body {
+	background: #cccccc;
+}
+h2 {
+	color: black;
+	font-family: Trebuchet MS;
+	text-align: center;
+	font-size: 2.2em;
+	letter-spacing: 4px;
+	font-style: italic;
+	padding-top: -10px;
+}
+
+h3 {
+	padding-top: 30px;
+}
+
+
+footer {
+	padding-top: 100px;
+}
+
+.JayPlaying1 {
+	width: 750px;
+    height: 500px;
+    border: 3px solid #black;
+    margin-top: 15px;
+}
+
+.container {
+	display: block;
+	margin: auto;
+	text-align: center;	
+}
+
+.image-container {
+	width: 700px;
+	margin: 30px auto 0;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+.gallery {
+	width: 700px;
+	margin: auto;
+}
+
+.gallery ul {
+	list-style: none;
+}
+
+.gallery li {
+	float: left;
+	margin: 10px;
+}
+
+.gallery img {
+	display: block;
+	padding: 5px;
+	background: #B3B3B3;
+	border: 1px solid #E3E3E3;
+	box-shadow: 1px 1px 2px #000;
+}
+
+.gallery img:hover {
+	border: 1px solid #000080;
+}
+
+/*.image-container {
+	display: block;
+	margin: auto;
+	text-align: center;
+	margin-left: 165px;
+	margin-right: 165px;
+	padding-top: 60px;
+}
+
+*/
+
+.audio {
+	display: block;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.about {
+	height: 500px;
+	text-align: center;
+	padding: 75px 125px 0px 125px;
+}
+
+/* h4,h5 {
+	color: #black;
+	font-family: verdana;
+	font-size: 2;
+	font-style: italic;
+	text-align: center;
+}
+*/
+
+footer	{	
+text-align: center;
+
+}
+
+.projects {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+}
+
+/* Navigation
+====================================================== */
+
+#nav {
+text-align:center;
+}
+#nav li {
+display:inline;
+
+}
+#nav a {
+text-decoration: none; 
+padding:0 30px; /* variable width */
+font-family: verdana;
+color: black;
+
+}  
+
+.current {
+	font-weight: bold;
+}
+
+
