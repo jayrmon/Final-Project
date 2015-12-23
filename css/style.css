@@ -7,9 +7,9 @@ html {
 
 /* Your styles here */
 
-
 .wrapper {
 	width: 960px;
+	height: 100%;
 	margin: 0 auto;
 	border-color: #787878;
 	border-style: solid;
@@ -23,6 +23,10 @@ html {
 	-moz-box-shadow: 0 0 8px #8888BA;
 	-webkit-box-shadow: 0 0 8px #8888BA;
 	box-shadow: 0 0 8px #8888BA;
+}
+
+header {
+	border-top: none;
 }
 
 h1 {
@@ -39,6 +43,15 @@ h1 a {
 	text-decoration: none;
 	color: #000080;
 	letter-spacing: 2px;
+}
+
+h1 a:hover {
+	color: #5F5F96;
+}
+
+p{
+	/* line-height */
+	line-height: 20px;
 }
 
 .title {
@@ -69,12 +82,37 @@ h1 a {
 	color: #000080;
 }
 
-
-
-.projects {
+/*.projects {
 	line-height: 95%;
 }
+*/
 
+.projects {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+}
+
+.project-detail {
+	height: 125px;
+}
+
+.shows {
+	display: block;
+	line-height: 50%;
+	text-align: center;
+	background-color: #EBF3F5;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.shows hr {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 body {
 	background: #cccccc;
@@ -93,9 +131,8 @@ h3 {
 	padding-top: 30px;
 }
 
-
 footer {
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 .JayPlaying1 {
@@ -112,48 +149,158 @@ footer {
 }
 
 .image-container {
-	width: 700px;
+	width: 100%;
 	margin: 30px auto 0;
 	padding-top: 30px;
 	overflow: hidden;
 }
 
 .gallery {
-	width: 700px;
+	width: 70%;
 	margin: auto;
+	padding: 0 20px;
 }
 
 .gallery ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .gallery li {
+	width: 33%;
+	display: inline-block;
 	float: left;
-	margin: 10px;
+	text-align: center;
+}
+
+.gallery li a{
+	display: inline-block;
+	padding: 5px;
 }
 
 .gallery img {
-	display: block;
-	padding: 5px;
+	display: inline-block;
 	background: #B3B3B3;
 	border: 1px solid #E3E3E3;
 	box-shadow: 1px 1px 2px #000;
+	/* Good */
+	max-width: 100%;
+	margin: 0;
+	padding: 5px;
 }
 
 .gallery img:hover {
 	border: 1px solid #000080;
 }
 
-/*.image-container {
-	display: block;
-	margin: auto;
-	text-align: center;
-	margin-left: 165px;
-	margin-right: 165px;
-	padding-top: 60px;
+.contactwrapper {
+	max-width:500px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+	padding-top: 50px
 }
 
-*/
+#contact-form {
+	text-shadow:0 1px 0 #FFF;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background:#F9F9F9;
+	padding:25px;
+	font-family: Trebuchet MS;
+	text-transform: uppercase;
+}
+#contact-form h3 {
+	color:black;
+	display:block;
+	font-size:28px;
+}
+#contact-form h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+#contact-form label span {
+	cursor:pointer;
+	color:black;
+	display:block;
+	margin:5px 0;
+	font-weight:900;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea {
+	width:100%;
+	box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+	font-size: .7em;
+}
+#contact-form input[type="text"]:hover,
+#contact-form input[type="email"]:hover,
+#contact-form input[type="tel"]:hover,
+#contact-form input[type="url"]:hover,
+#contact-form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+}
+#contact-form button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:black;
+
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+	background-color: #000080;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+    color:#888;
+}
+:-moz-placeholder {
+    color:#888;
+}
+::-moz-placeholder {
+    color:#888;
+}
+:-ms-input-placeholder {
+    color:#888;
+}
+
+.placeholder {
+	font-size: 5px;
+}
 
 .audio {
 	display: block;
@@ -167,46 +314,102 @@ footer {
 	padding: 75px 125px 0px 125px;
 }
 
-/* h4,h5 {
-	color: #black;
-	font-family: verdana;
-	font-size: 2;
-	font-style: italic;
-	text-align: center;
-}
-*/
-
 footer	{	
 text-align: center;
 
-}
-
-.projects {
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-bottom: 10px;
 }
 
 /* Navigation
 ====================================================== */
 
 #nav {
-text-align:center;
+text-align: center;
+padding: 0;
 }
-#nav li {
-display:inline;
 
+#nav li {
+display: inline;
 }
+
 #nav a {
 text-decoration: none; 
 padding:0 30px; /* variable width */
 font-family: verdana;
 color: black;
-
 }  
+
+#navshows {
+text-align:center;
+padding-bottom: 70px;
+}
+
+#navshows li {
+display:inline;
+}
+
+#navshows a {
+text-decoration: none; 
+padding:0 30px; /* variable width */
+font-family: verdana;
+color: black;
+}  
+
 
 .current {
 	font-weight: bold;
 }
 
+/* When your screen becomes 960px wide or less, run all of the CSS below */
+@media screen and (max-width: 960px) {
+	html{
+		font-size: 16px;
+	}
+	.wrapper{
+		width: 100%;
+	}
+	.gallery li{
+		width: 50%;
+	}
+}
 
+/* When your screen becomes 768px wide or less, run all of the CSS below */
+@media screen and (max-width: 768px) {
+	.container img {
+		width: 100%;
+		height: 100%;
+		margin: 10px 10px 10px 10px;
+		text-align: center;
+	}
+
+	.about {
+		width: 100%;
+		height: 100%;
+		margin: 10px 10px 10px 10px;
+		text-align: center;
+		/* ovewrite padding */
+	}
+	.shows {
+			width: 100%;
+			height: 100%;
+			margin: 10px 10px 10px 10px;
+			text-align: center;
+		}
+
+	.image-container li {
+			width: 100%;
+		}
+	.gallery li {
+		width: 100%;
+	}
+
+	.nav li {
+		width: 100%
+		text-align: center;
+		margin: 0;
+	}
+
+	p {
+		font-size: 18px;
+	}
+}
+	
